@@ -44,7 +44,7 @@ hi()'''
 #   return a/b
 
 # a = div
-# print a(10,5)
+# print a(10,0)
 
 # class File():
 #   def __init__(self,file,method):
@@ -141,8 +141,8 @@ hi()'''
 
 # # Multiplier of 3
 # times3 = make_multiplier_of(3)
-# print times3.__name__
-# # print times3(5)
+# print times3.__name__,"fgggffg"
+# print times3(5)
 
 
 
@@ -560,11 +560,10 @@ hi()'''
 # print isinstance(A,object)
 # print isinstance(object,object)
 # print isinstance(isinstance,object)
-# print(callable(func))
-# print(callable(A))
-# print(callable(f))
-# print(callable(t))
-
+# print callable(func)
+# print callable(A)
+# print callable(f)
+# print callable(t)
 
 # birthdays = {'Alice': 'Apr 1', 'Bob': 'Dec 12', 'Carol': 'Mar 4'}
 # while True:
@@ -655,20 +654,213 @@ hi()'''
 
 
 
-class A:
-	name="Subhash"
-	@staticmethod
-	def getName():
-		name
-		if name is None:
+# class A:
+# 	name="Subhash"
+# 	@staticmethod
+# 	def getName():
+# 		name
+# 		if name is None:
 			
-			print name
-		else:
-			print name
-	@classmethod
-	def getclassName(cls):
-		print cls.name
+# 			print name
+# 		else:
+# 			print name
+# 	@classmethod
+# 	def getclassName(cls):
+# 		print cls.name
 
-a=A()
-a.getclassName()
-a.getName()
+# a=A()
+# a.getclassName()
+# a.getName()
+
+import re
+# phoneNumRegex = re.compile(r'\d{3}-\d{3}-\d{4}')
+# pattern = phoneNumRegex.search('my number is 222-122-1244')
+# print pattern.group()
+# pateern_list = re.findall(r'\d{2}+-\d{2}-\d{2}+','my dob is 22-08-1994 and original is 1994-06-10')
+# print pateern_list
+
+
+
+# pattern = re.compile(r'\d\d-\d\d\d\d\d\d\d\d\d\d')
+# (?# pattern = re.compile(r'\d{2}-\d{10}'))
+# pattern = re.compile(r'(\d{2}-)?\d{10}')
+# res = pattern.search('my mobile number is 91-9642286149 tyrtyrtyrtyrty')
+# res = pattern.search('my mobile number is 9642286149 tyrtyrtyrtyrty')
+# print res.group()
+# pattern = re.compile(r'Sub(h)?ash'))
+# pattern = pattern = re.compile(r'Sub(hhhh)*')
+
+# r1=pattern.search('my name is Subhash')
+# r2=pattern.search('my name is Subash')
+# r3 = pattern.search('my name is Subhhhhash')
+
+# print r1.group(),r2.group()	
+# print r3.group()
+
+
+# p1 = re.compile(r'\d+\s\w+$')
+# r1 = p1.findall('ssf 12 ffdsfsd 1 dssfdfdsf 14 dfsdfsdfsdf dsfsdfsdfsdsfd 1 1 1 4 23')
+# print r1
+# # a = r1[4]
+# # print a,type(a)
+# endsWithNumber = re.compile(r'\d$')
+# a = endsWithNumber.search('Your number is 42')
+# print a,a.group()
+
+# p2 = re.compile(r'.at')
+# p3 = re.compile(r'.*',re.DOTALL)
+# r2 = p3.search('adadas at the \ncat bart bat mat dort rat')
+# print r2.group()
+
+# a = re.findall(r'sf',"sfsdfsdsdfsdf 3 sdsdfdf 3 SF SDFSDFSDF ASASASSFFF" ,re.I)
+# print a
+
+# Replacing a string in regular expression
+
+# a=re.sub(r'ba(\w)\w*','**','Subash')
+# print a
+
+# agentNamesRegex = re.compile(r'Agent (\w)\w*')
+# a = agentNamesRegex.sub(r'\1****', 'Agent Alice told Agent Carol that Agent Eve knew Agent Bob was a double agent.')
+# print a
+
+# mobile_pattern = r'^[6-9][0-9]+'
+# a= re.findall(r'[6-9][0-9]{9}','my mobile number is 9642286148 and im having a mobile number 6302431362 and 7887123457 dfsdfjsdfsdf 6765435678 dfsdfsdf 5421234567')
+# print a
+
+# class Sample:
+# 	def __new__():
+# 		print "benfore __init__"
+# 		inst = object.__new__(cls)
+#     return inst
+# 	def __init__(self):
+# 		print "In __init__"
+
+
+# s=Sample()
+
+# def product(a,b):
+#     print a*b
+
+# def product(a,b,c):
+#     print a*b*c
+
+# product(1,5)
+
+# from collections import defaultdict
+
+# d=defaultdict(list)
+# print d
+# for i,j in [('a',(1,2)),('b',(3,4)),('c',(5,6))]:
+#     d[i].append(j)
+# print d
+
+
+# class A:
+#     def a(name):
+#         print name
+
+#     @staticmethod
+#     def get_age(age):
+#         print age
+
+
+# obj=A()
+# obj.a()
+# A.get_age(25)
+
+
+# def func(start=None,end=None,skip=None):
+#     if end==None and skip==None:
+#         end,start = start,0
+#     while end>start:
+#         print start
+#         if skip is not None:
+#             start +=skip
+#         else:
+#             start+=1
+# func(1,10,3)
+
+
+# from math import pow
+# class complex:
+#     def __init__(self, real, imag):
+#         self.real = real
+#         self.imag = imag
+#     def __add__(self, other):
+#         return complex(self.real+other.real, self.imag+other.imag)
+#     def __sub__(self, other):
+#         return complex(self.real-other.real, self.imag-other.imag)
+#     def __mul__(self, other):
+#         return complex(self.real*other.real-self.imag*other.imag, self.real*other.imag+self.imag*other.real)
+#     def __div__(self, other):
+#         try: 
+#             return self.__mul__(complex(other.real, -1*other.imag)).__mul__(complex(1.0/(other.mod().real)**2, 0))
+#         except ZeroDivisionError as e:
+#             print e
+#             return None
+#     def mod(self):
+#         return complex(pow(self.real**2+self.imag**2, 0.5), 0)
+#     def __str__(self, precision=2):
+#         return str(("%."+"%df"%precision)%float(self.real))+('+' if self.imag>=0 else '-')+str(("%."+"%df"%precision)%float(abs(self.imag)))+'i'
+
+    
+# A = complex(*map(float, raw_input().strip().split()))
+# B = complex(*map(float, raw_input().strip().split()))
+
+# print A+B
+# print A-B
+# print A*B
+# print A/B
+# print A.mod()
+# print B.mod()
+
+
+# Complex number  addition
+# class Complex:
+#     def __init__(self,real,img):
+#         self.real = real
+#         self.img = img
+#     def __add__(self,other):
+#         return Complex(self.real+other.real , self.img+other.img)
+
+#     def __repr__(self):
+#         return str(self.real) +'+'+ str(self.img) +'j'
+#     def __str__(self):  
+#         return str(self.real) +'+'+ str(self.img) +'j'
+
+
+# c=Complex(2,3)
+# d = Complex(3,2)
+# # print c+d
+# print Complex(3,5).__add__(Complex(5,3))
+
+
+# str1=""
+# name="Subhash"
+# for each in name:
+#     str1=each+str1
+# if str1==name:
+#     print True
+# else:
+#     print False
+
+# a = 1
+# def func1():
+#     a = 2
+#     print(a)
+#     def func2():
+#         nonlocal a
+#         a=3
+#         print(a)
+#     func2()
+#     print(a)
+# func1()
+# print(a)
+
+l=[1,2,4,6,1,2,4,6,6,1,2,1]
+for each in l:
+    if l.count(each)>=2 and l.count(each)<=4:
+        print each
+    elif l.count(each)>=4:
+        print each,"4"
